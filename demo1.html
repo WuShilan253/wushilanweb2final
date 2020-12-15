@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>期末课业</title>
+    <link rel="stylesheet" type="text/css" href="./demo2.css" />
+
+</head>
+
+<body>
+    <div class="whole">
+        <div class="before" id="before">
+            <img src="./img/logo.png" alt="抗疫快报" class="logo">
+
+            <div class="nav01">
+                <ul class="clear">
+                    <li>
+                        <a href="https://3g.163.com/news/article/FEU7S59D05149TAF.html?from=history-back-list">国内疫情</a>
+                    </li>
+                    <li>
+                        <a href="https://new.qq.com/rain/a/20200428A09ZPA00">国外疫情</a>
+                    </li>
+                    <li>
+                        <a href="https://baijiahao.baidu.com/s?id=1667536363846125552&wfr=spider&for=pc">全球疫情</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search ">
+                <select name="sit" id="sit">
+                    <option value="overworld">全球</option>
+                    <option value="Wuhan">中国武汉</option>
+                    <option value="jilin">中国吉林</option>
+                    <option value="America">美国</option>
+                    <option value="Cuba">巴西</option>
+                    <option value="Russia">俄罗斯</option>
+                    <option value="India">印度</option>
+                    <option value="other">其他地区</option>
+                </select>
+                <form class="form01">
+                    <input type="text" value="输入关键字" name="输入关键字">
+                </form>
+                <form class="form02">
+                    <input type="submit" value="搜索" style="background-color:darkorange" />
+                </form>
+            </div>
+            <div class="user">
+                <ul>
+                    <li>
+                        <button id="wrong">报错</button>
+                    </li>
+                    <li>
+                        <button id="contribute">投稿</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrongtemp">
+            <div id="wrongborder">
+                <h1>我要来报错</h1>
+                <img id="wclose" src="./img/wclose.png">
+                <form>
+                    <textarea cols="40" rows="8" value="" id='wtxt'>点击我，输入你找到的错误吧~</textarea>
+                    <br />
+                    <button class="wbtn" id="wbtn">完成报错</button>
+                </form>
+            </div>
+        </div>
+        <div id="contributetemp">
+            <div id="contibuteborder">
+                <h1>我要来投稿</h1>
+                <img id="cclose" src="./img/cclose.png">
+                <form>
+                    <textarea cols="40" rows="8" value="" id='ctxt'>点击我，开始输入你的稿件吧~</textarea>
+                    <br />
+                    <button class="cbtn" id="cbtn">完成投稿</button>
+                </form>
+            </div>
+        </div>
+        <div id="top" class="up" onclick="goTop()">
+            <img src="./img/top.png" alt="回到顶部">
+        </div>
+        <div class="banner">
+            <div class="banner02" id="banner02">
+                <img id="bannerimg" src="./img/banner1.png" alt="齐心抗疫">
+            </div>
+            <div class="nav02">
+                <ul id="showimg">
+                    <li>
+                        <a href="#">疫情中的医护人员</a>
+                    </li>
+                    <li>
+                        <a href="#">疫情中的警务人员</a>
+                    </li>
+                    <li>
+                        <a href="#">疫情中的施工人员</a>
+                    </li>
+                    <li>
+                        <a href="#">疫情中的餐饮人员</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="then">
+            <div class="doctor">
+                <div class="doctor01">
+                    <h1 align="center">优秀院士知多少</h1>
+                </div>
+            </div>
+            <div class="doctor02">
+                <div class="clear">
+                    <ul>
+                        <li>
+                            <img src="./img/02.png" alt="优秀院士">
+                            <div class="learn01">
+                                <span>
+                                    这些优秀院士
+                                </span>
+                                <p>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在疫情期间他们做出过重要贡献！他们挽救了大批百姓的性命。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/021.png" alt="钟南山院士">
+                            <div class="learn02">
+                                <span>
+                                    钟南山院士
+                                </span>
+                                <p>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp率先提出了人传人的警告，并多次苦口婆心劝说国民注意洗手，待在家里，也提出氯喹有效，但多次提出新冠肺炎没有特效药。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/022.png" alt="钟南山院士">
+                            <div class="learn03">
+                                <span>
+                                    李兰娟院士
+                                </span>
+                                <p>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp疫情初期就自动请缨组建了团队赴武汉，提出了要将武汉封城。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/023.png" alt="钟南山院士">
+                            <div class="learn03">
+                                <span>
+                                    王辰院士
+                                </span>
+                                <p>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最早提出建立方舱医院，并提出在方舱医院重点收治确诊的新冠肺炎轻症患者的建议，解决当下定点医院收治容量有限的问题。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="wrap">
+                    <div id="mark">
+                        <h1>面对疫情，我的抗疫态度</h1>
+                        <div id="pic">
+                            <img src="./img/star0.png" title="1" name="0" />
+                            <img src="./img/star0.png" title="2" name="1" />
+                            <img src="./img/star0.png" title="3" name="2" />
+                            <img src="./img/star0.png" title="4" name="3" />
+                            <img src="./img/star0.png" title="5" name="4" />
+                            <br />
+                        </div>
+                        <form>
+                            <textarea cols="40" rows="8" value="" id='txt'>欢迎大家进行评论交流~</textarea>
+                            <br />
+                            <button class="btn" id="subbtn">提交评论</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="left">
+                <img src="./img/logo.png" alt="抗疫快报">
+                <p class="left01">联手抗疫，相伴关注疫情前线最新新闻。</p>
+                <p class="left02">
+                    投稿电话：8888 666666</p>
+                <a href="#" class="app" id="downa">点击下载手机端APP</a>
+            </div>
+            <div class="right01">
+                <p>关于本报</p>
+                <ul>
+                    <li>
+                        <a href="#">帮助</a>
+                    </li>
+                    <li>
+                        <a href="#">管理团队</a>
+                    </li>
+                    <li>
+                        <a href="#">工作机会</a>
+                    </li>
+                    <li>
+                        <a href="#">客户服务</a>
+                    </li>
+                    <li>
+                        <a href="#">用户协议</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right02">
+                <p>新手指南</p>
+                <ul>
+                    <li>
+                        <a href="#">如何注册</a>
+                    </li>
+                    <li>
+                        <a href="#">忘记密码</a>
+                    </li>
+                    <li>
+                        <a href="#">如何投稿</a>
+                    </li>
+                    <li>
+                        <a href="#">客户服务</a>
+                    </li>
+                    <li>
+                        <a href="#">在线留言</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right03">
+                <p>合作伙伴</p>
+                <ul>
+                    <li>
+                        <a href="#">合作机构</a>
+                    </li>
+                    <li>
+                        <a href="#">合作伙伴</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rule">
+                <h2>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp抗疫快报版权所有，未经书面授权禁止使用！
+                </h2>
+                <p>地址：河北省石家庄市裕华区南二环东路河北师范大学软件学院 联系方式：8888 666666
+                </p>
+            </div>
+        </div>
+
+</body>
+<script src="./demo3.js"></script>
+
+</html>
