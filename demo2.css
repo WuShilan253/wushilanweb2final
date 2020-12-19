@@ -294,13 +294,13 @@ body{
     height:500px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);
-    margin:40px 20px 15px 10px;
+    margin:40px 20px 15px 0;
 }
 .doctor02 .clear ul li img{
     width:100%;
 }
 .doctor02 .clear ul li p{
-    width:215px;
+    width:205px;
     height:100px;
     font:400 16px Microsoft YaHei;
     color:rgba(5,5,5,1);
@@ -309,7 +309,7 @@ body{
 }
 .doctor02 .clear .learn01{
     float:left;
-    width:228px;
+    width:218px;
     height:130px;
     font-size:12px;
     font-family:Microsoft YaHei;
@@ -324,7 +324,7 @@ body{
 }
 .doctor02 .clear .learn02{
     float:left;
-    width:228px;
+    width:218px;
     height:130px;
     font-size:12px;
     font-family:Microsoft YaHei;
@@ -339,7 +339,7 @@ body{
 }
 .doctor02 .clear .learn03{
     float:left;
-    width:228px;
+    width:218px;
     height:130px;
     font-size:12px;
     font-family:Microsoft YaHei;
@@ -353,7 +353,9 @@ body{
     color:rgba(5,5,5,1);
 }
 #wrap {
+    display: inline-block;
     float: left;
+    left:1100px;
     width: 300px;
     margin: 120px 15px;
     border:15px solid rgba(243, 229, 204, 0.884);
@@ -395,8 +397,26 @@ body{
     margin:850px 0 0 2px;
     background:#FFF;
 }
+#protect1 {
+    width: 150px;
+    height: 40px;
+    font: 800 15px "黑体";
+    float: right;
+    background-color: blanchedalmond;
+    margin: 20px 90px;
+} 
+#protect2 {
+    width: 150px;
+    height: 40px;
+    font: 800 15px "黑体";
+    float: right;
+    background-color: blanchedalmond;
+    margin-left: 90px;
+    margin-right:90px;
+} 
 .last .left{
     float:left;
+    width: 350px;
     padding-left: 150px;
 }
 .last .left img{
