@@ -8,8 +8,8 @@
 
 </head>
 
-<body>
-    <div class="whole">
+<body id="body">
+    <div class="whole" id="whole">
         <div class="before" id="before">
             <img src="./img/logo.png" alt="抗疫快报" class="logo">
 
@@ -38,7 +38,7 @@
                     <option value="other">其他地区</option>
                 </select>
                 <form class="form01">
-                    <input type="text" value="输入关键字" name="输入关键字">
+                    <input type="text" value="输入关键字" name="输入关键字" id="bannerinput">
                 </form>
                 <form class="form02">
                     <input type="submit" value="搜索" style="background-color:darkorange" />
@@ -176,13 +176,15 @@
                 </div>
             </div>
         </div>
-        <div class="last">
+        <div class="last" id="last">
             <div class="left">
                 <img src="./img/logo.png" alt="抗疫快报">
                 <p class="left01">联手抗疫，相伴关注疫情前线最新新闻。</p>
                 <p class="left02">
                     投稿电话：8888 666666</p>
-                <a href="#" class="app" id="downa">点击下载手机端APP</a>
+                <!-- <a href="#" class="app" id="downa">点击下载手机端APP</a> -->
+                <button id="protect1">点击切换背景颜色</button>
+                <button id="protect2">恢复默认背景颜色</button>
             </div>
             <div class="right01">
                 <p>关于本报</p>
@@ -243,7 +245,7 @@
                 </p>
             </div>
         </div>
-
+    </div>
 </body>
 <script src="./demo3.js"></script>
 
