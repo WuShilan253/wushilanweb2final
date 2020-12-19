@@ -1,3 +1,7 @@
+var bannerinput = document.getElementById("bannerinput");
+bannerinput.onclick = function () {
+    bannerinput.value = "";
+}
 //交互效果1：实现banner图的轮播图的交互效果
 var banner02 = document.getElementById("banner02");
 var bannerimg = document.getElementById("bannerimg");
@@ -103,7 +107,7 @@ subbtn.onclick = function () {
         picList[i].src = "./img/star0.png";
     }
 }
-//交互效果6：投稿和报错样式的出现和消失
+
 var wrong = document.getElementById("wrong");
 var contibute = document.getElementById("contirbute");
 var wrongtemp = document.getElementById("wrongtemp");
@@ -114,6 +118,7 @@ var wbtn = document.getElementById("wbtn");
 var cbtn = document.getElementById("cbtn");
 var wclose = document.getElementById("wclose");
 var cclose = document.getElementById("cclose");
+//交互效果6：报错样式的出现和消失
 wrongtemp.style.display = "none";
 contributetemp.style.display = "none";
 wrong.onclick = function () {
@@ -125,17 +130,18 @@ wrong.onclick = function () {
 wbtn.onclick = function () {
     console.log(wtxt.value);
     wrongtemp.style.display = "none";
-    if(wtxt.value!=""&&wtxt.innerHTML!="点击我，输入你找到的错误吧~"){
+    if (wtxt.value != "" && wtxt.innerHTML != "点击我，输入你找到的错误吧~") {
         alert("报错成功，感谢您！");
     }
     else {
         alert("您什么也没有输入，欢迎下次报错！");
     }
-    wtxt.innerHTML="点击我，输入你找到的错误吧~";
+    wtxt.innerHTML = "点击我，输入你找到的错误吧~";
 }
-wclose.onclick = function(){
+wclose.onclick = function () {
     wrongtemp.style.display = "none";
 }
+//交互效果7：投稿样式的出现和消失
 contribute.onclick = function () {
     contributetemp.style.display = "block";
     ctxt.onfocus = function () {
@@ -144,15 +150,38 @@ contribute.onclick = function () {
 }
 cbtn.onclick = function () {
     contributetemp.style.display = "none";
-    if(ctxt.value!=""&&ctxt.innerHTML!="点击我，开始输入你的稿件吧~"){
+    if (ctxt.value != "" && ctxt.innerHTML != "点击我，开始输入你的稿件吧~") {
         alert("投稿成功，感谢您！");
-    }else if(ctxt.innerHTML!=null){
+    } else if (ctxt.innerHTML != "") {
         alert("您什么也没有输入，欢迎下次投稿！");
-    }else if(ctxt.innerHTML!="点击我，输入你的稿件吧~"){
+    } else if (ctxt.innerHTML != "点击我，输入你的稿件吧~") {
         alert("您什么也没有输入，欢迎下次投稿！");
     }
-    ctxt.innerHTML="点击我，开始输入你的稿件吧~";
+    ctxt.innerHTML = "点击我，开始输入你的稿件吧~";
 }
-cclose.onclick = function(){
+cclose.onclick = function () {
     contributetemp.style.display = "none";
+}
+//交互效果8：切换背景颜色
+var protect1 = document.getElementById("protect1");
+var protect2 = document.getElementById("protect2");
+var body = document.getElementById("body");
+var whole = document.getElementById("whole");
+var last = document.getElementById("last");
+protect1.onclick = function () {
+    var flag = false;
+    var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+    var colorStr = "#";
+    for (var i = 0; i < 6; i++) {
+        var index = parseInt(Math.random() * arr.length);
+        colorStr = colorStr + arr[index];
+    }
+    body.style.backgroundColor = colorStr;
+    whole.style.backgroundColor = colorStr;
+    last.style.backgroundColor = colorStr;
+}
+protect2.onclick = function () {
+    body.style.backgroundColor = "#FFFAF4";
+    whole.style.backgroundColor = "#FFFAF4";
+    last.style.backgroundColor = "#fff";
 }
